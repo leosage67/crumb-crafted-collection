@@ -8,35 +8,51 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 45 20% 97%;
+    --foreground: 25 15% 20%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 40 25% 95%;
+    --card-foreground: 25 15% 20%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 40 25% 95%;
+    --popover-foreground: 25 15% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 28 65% 45%;
+    --primary-foreground: 45 25% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 42 30% 85%;
+    --secondary-foreground: 25 15% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 42 20% 88%;
+    --muted-foreground: 25 10% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 35 55% 65%;
+    --accent-foreground: 25 15% 20%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 45 25% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 42 20% 85%;
+    --input: 42 20% 85%;
+    --ring: 28 65% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Bakery-specific colors */
+    --bakery-gold: 40 85% 65%;
+    --bakery-cream: 45 35% 92%;
+    --bakery-brown: 25 35% 35%;
+    --bakery-warm: 35 60% 75%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--bakery-cream)), hsl(var(--bakery-warm)));
+    --gradient-warm: linear-gradient(180deg, hsl(var(--bakery-gold) / 0.1), hsl(var(--bakery-warm) / 0.2));
+    
+    /* Shadows */
+    --shadow-warm: 0 10px 30px -10px hsl(var(--bakery-brown) / 0.2);
+    --shadow-soft: 0 4px 20px -4px hsl(var(--bakery-gold) / 0.3);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +117,82 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-warm {
+    background: var(--gradient-warm);
+  }
+  
+  .shadow-warm {
+    box-shadow: var(--shadow-warm);
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .text-bakery-gold {
+    color: hsl(var(--bakery-gold));
+  }
+  
+  .text-bakery-brown {
+    color: hsl(var(--bakery-brown));
+  }
+  
+  .bg-bakery-cream {
+    background-color: hsl(var(--bakery-cream));
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-warm;
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 0.8s ease-out;
+  }
+  
+  .animate-bounce-soft {
+    animation: bounce-soft 2s ease-in-out infinite;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce-soft {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
