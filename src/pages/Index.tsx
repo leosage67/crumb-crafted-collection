@@ -3,25 +3,8 @@ import Hero from "@/components/Hero";
 import Menu from "@/components/Menu";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
-import { useEffect } from "react";
 
 const Index = () => {
-  // Add scroll listener for navigation
-  useEffect(() => {
-    const handleScroll = () => {
-      const nav = document.querySelector('nav');
-      if (nav) {
-        if (window.scrollY > 50) {
-          nav.classList.add('scrolled');
-        } else {
-          nav.classList.remove('scrolled');
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <div className="min-h-screen">

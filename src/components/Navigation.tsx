@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -8,6 +8,12 @@ const Navigation = () => {
   const handleScroll = () => {
     setIsScrolled(window.scrollY > 50);
   };
+
+  // Add scroll listener
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // Scroll to section
   const scrollToSection = (sectionId: string) => {
