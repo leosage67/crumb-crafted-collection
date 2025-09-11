@@ -7,7 +7,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Visit Us",
-      details: ["123 Bakery Lane", "Sweet Valley, CA 90210"],
+      details: ["11251 Reed Way, Broomfield, CO 80020."], // I changed the location to Jefferson Academy Secondary.
       action: "Get Directions"
     },
     {
