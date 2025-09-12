@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
-          alt="Golden Crust Bakery Interior"
+          alt="Leo's Bakery Interior"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-bakery-brown/40"></div>
@@ -24,13 +24,13 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 animate-fade-in">
         <h1 className="text-5xl md:text-7xl font-serif font-bold mb-4">
-          Golden Crust
+          Leo's Bakery
         </h1>
         <p className="text-3xl md:text-4xl font-script text-bakery-gold mb-6">
           Artisan Bakery
         </p>
         <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed">
-          Freshly baked pastries, artisan breads, and delightful treats crafted with love since 1985
+          Freshly baked pastries, artisan breads, and delightful treats crafted with love since 2025
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

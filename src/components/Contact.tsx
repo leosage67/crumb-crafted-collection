@@ -19,7 +19,7 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      details: ["orders@goldencrust.com", "info@goldencrust.com"],
+      details: ["orders@leosbakery.com", "info@leosbakery.com"],
       action: "Send Email"
     },
     {
@@ -40,7 +40,7 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-bakery-brown mb-4">
-            Visit Golden Crust
+            Visit Leo's Bakery
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Come experience the warmth of our bakery and taste the difference that passion makes
@@ -121,7 +121,7 @@ const Contact = () => {
               <div className="text-center text-muted-foreground">
                 <MapPin className="w-12 h-12 mx-auto mb-4" />
                 <p className="text-lg font-semibold">Interactive Map</p>
-                <p className="text-sm">123 Bakery Lane, Sweet Valley, CA 90210</p>
+                <p className="text-sm">11251 Reed Way, Broomfield, CO 80020</p>
               </div>
             </div>
           </Card>

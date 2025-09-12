@@ -21,7 +21,7 @@ const About = () => {
     {
       icon: Users,
       title: "Family Tradition",
-      description: "A family business serving the community with authentic flavors since 1985."
+      description: "A family business serving the community with authentic flavors since 2025."
     }
   ];
 
@@ -30,10 +30,10 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-bakery-brown mb-4">
-            About Golden Crust
+            About Leo's Bakery
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            For nearly four decades, Golden Crust Bakery has been the heart of our community, 
+            Since 2025, Leo's Bakery has been the heart of our community, 
             bringing families together through the love of freshly baked goods and traditional recipes.
           </p>
         </div>
@@ -46,14 +46,14 @@ const About = () => {
             </h3>
             <div className="space-y-4 text-lg leading-relaxed text-foreground">
               <p>
-                Founded in 1985 by Maria and Giuseppe Rossi, Golden Crust began as a small 
+                Founded in 2025 by Leo Rodriguez, Leo's Bakery began as a small 
                 neighborhood bakery with a simple mission: to bring authentic European baking 
-                traditions to our local community.
+                traditions to our local community in Westminster.
               </p>
               <p>
-                Today, our second generation continues this legacy, combining time-honored 
+                From day one, we've been combining time-honored 
                 techniques with carefully selected ingredients to create the pastries, breads, 
-                and desserts that have made us a beloved local institution.
+                and desserts that make us a beloved local institution.
               </p>
               <p>
                 Every morning before dawn, our passionate bakers begin their work, ensuring 
@@ -97,7 +97,7 @@ const About = () => {
             every pastry carries love."
           </blockquote>
           <p className="text-lg font-semibold text-bakery-gold">
-            - Maria Rossi, Founder
+            - Leo Rodriguez, Founder
           </p>
         </div>
       </div>
