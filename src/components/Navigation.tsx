@@ -38,19 +38,10 @@ const Navigation = () => {
           </div>
 
           {/* Order Now Button */}
-          <div className="flex items-center">
-            <Button 
-              size="lg"
-              className="bg-bakery-gold hover:bg-bakery-warm text-bakery-brown font-semibold animate-bounce-soft"
-              onClick={() => scrollToSection('contact')}
-            >
-              Order Now
-            </Button>
-          </div>
         </div>
         
         {/* Navigation Links */}
-        <div className="flex justify-center space-x-8 pb-4">
+        <div className="flex items-center justify-center space-x-8 pb-4">
           {[
             { name: 'Home', id: 'home' },
             { name: 'Menu', id: 'menu' },
@@ -65,6 +56,13 @@ const Navigation = () => {
               {item.name}
             </button>
           ))}
+          <Button 
+            size="lg"
+            className="bg-bakery-gold hover:bg-bakery-warm text-bakery-brown font-semibold animate-bounce-soft"
+            onClick={() => scrollToSection('contact')}
+          >
+            Order Now
+          </Button>
         </div>
       </div>
     </nav>
