@@ -16,7 +16,7 @@ const About = () => {
     {
       icon: Clock,
       title: "Fresh Daily",
-      description: "Our bakers start at 4 AM to ensure everything is fresh when you arrive."
+      description: "I start at 4 AM to ensure everything is fresh when you arrive."
     },
     {
       icon: Users,
@@ -33,7 +33,7 @@ const About = () => {
             About Leo's Bakery
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Since 2025, Leo's Bakery has been the heart of our community, 
+            Since 2025, Leo's Bakery has been the heart of my community, 
             bringing families together through the love of freshly baked goods and traditional recipes.
           </p>
         </div>
@@ -42,22 +42,22 @@ const About = () => {
           {/* Story Text */}
           <div className="animate-slide-up">
             <h3 className="text-3xl font-serif font-bold text-bakery-brown mb-6">
-              Our Story
+              My Story
             </h3>
             <div className="space-y-4 text-lg leading-relaxed text-foreground">
               <p>
-                Founded in 2025 by Leo Rodriguez, Leo's Bakery began as a small 
-                neighborhood bakery with a simple mission: to bring authentic European baking 
-                traditions to our local community in Westminster.
+                Founded in 2025 by Leo Justice, Leo's Bakery is a small 
+                neighborhood bakery with a simple mission: to bring authentic baking 
+                traditions to the local community in Westminster.
               </p>
               <p>
-                From day one, we've been combining time-honored 
+                From day one, I've been combining time-honored 
                 techniques with carefully selected ingredients to create the pastries, breads, 
                 and desserts that make us a beloved local institution.
               </p>
               <p>
-                Every morning before dawn, our passionate bakers begin their work, ensuring 
-                that when you walk through our doors, you're greeted by the warmth of our 
+                Every morning before dawn, I begin my work, ensuring 
+                that when you walk through my doors, you're greeted by the warmth of my 
                 ovens and the irresistible aroma of fresh-baked goodness.
               </p>
             </div>
@@ -93,11 +93,11 @@ const About = () => {
         {/* Quote Section */}
         <div className="text-center bg-bakery-cream p-12 rounded-2xl animate-fade-in">
           <blockquote className="text-2xl md:text-3xl font-script text-bakery-brown mb-4 italic">
-            "Baking is not just our profession, it's our passion. Every loaf tells a story, 
+            "Baking is not just my profession, it's my passion. Every loaf tells a story, 
             every pastry carries love."
           </blockquote>
           <p className="text-lg font-semibold text-bakery-gold">
-            - Leo Rodriguez, Founder
+            - Leo Justice, Founder
           </p>
         </div>
       </div>

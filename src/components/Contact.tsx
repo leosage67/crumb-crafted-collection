@@ -13,7 +13,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      details: ["(555) 123-CAKE", "(555) 123-2253"],
+      details: ["720-281-8937"],
       action: "Call Now"
     },
     {
@@ -32,7 +32,7 @@ const Contact = () => {
 
   const handleOrder = () => {
     // In a real app, this would open an ordering system
-    alert("Order system coming soon! Call us at (555) 123-CAKE to place your order.");
+    alert("Order system coming soon! Call us at 720-281-8937 to place your order.");
   };
 
   return (
@@ -43,7 +43,7 @@ const Contact = () => {
             Visit Leo's Bakery
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Come experience the warmth of our bakery and taste the difference that passion makes
+            Come experience the warmth of my bakery and taste the difference that passion and love makes
           </p>
         </div>
 
@@ -92,7 +92,7 @@ const Contact = () => {
                 Ready to Order?
               </h3>
               <p className="text-lg mb-6 opacity-90">
-                Call ahead for pickup or visit us in-store to see our full selection of fresh baked goods
+                Call ahead for pickup or visit us in-store to see my full selection of fresh baked goods
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
