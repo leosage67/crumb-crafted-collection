@@ -35,6 +35,10 @@ const Contact = () => {
     alert("Order system coming soon! Call us at 720-281-8937 to place your order.");
   };
 
+  const handleGetDirections = () => {
+    window.open("https://www.google.com/maps/dir/?api=1&destination=11251+Reed+Way,+Broomfield,+CO+80020", "_blank");
+  };
+
   return (
     <section id="contact" className="py-20 bg-gradient-warm">
       <div className="container mx-auto px-4">
@@ -75,6 +79,7 @@ const Contact = () => {
                     variant="outline" 
                     size="sm"
                     className="border-bakery-gold text-bakery-gold hover:bg-bakery-gold hover:text-bakery-brown"
+                    onClick={info.title === "Visit Us" ? handleGetDirections : undefined}
                   >
                     {info.action}
                   </Button>
@@ -114,16 +119,19 @@ const Contact = () => {
           </Card>
         </div>
 
-        {/* Map placeholder */}
+        {/* Interactive Map */}
         <div className="mt-16 animate-slide-up">
           <Card className="overflow-hidden shadow-soft">
-            <div className="bg-muted h-64 md:h-96 flex items-center justify-center">
-              <div className="text-center text-muted-foreground">
-                <MapPin className="w-12 h-12 mx-auto mb-4" />
-                <p className="text-lg font-semibold">Interactive Map</p>
-                <p className="text-sm">11251 Reed Way, Broomfield, CO 80020</p>
-              </div>
-            </div>
+            <iframe
+              src="https://www.google.com/maps?q=11251+Reed+Way,+Broomfield,+CO+80020&output=embed"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Leo's Bakery Location"
+            />
           </Card>
         </div>
       </div>
