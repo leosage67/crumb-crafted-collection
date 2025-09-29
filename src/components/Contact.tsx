@@ -116,13 +116,6 @@ const Contact = () => {
                 >
                   Place Order
                 </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  className="border-bakery-gold text-bakery-gold hover:bg-bakery-gold hover:text-bakery-brown"
-                >
-                  View Catering Menu
-                </Button>
               </div>
             </CardContent>
           </Card>
