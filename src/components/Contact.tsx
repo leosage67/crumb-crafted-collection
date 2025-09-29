@@ -7,26 +7,29 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Visit Us",
-      details: ["11251 Reed Way, Broomfield, CO 80020."], // I changed the location to Jefferson Academy Secondary.
-      action: "Get Directions"
+      details: ["11251 Reed Way, Broomfield, CO 80020."],
+      action: "Get Directions",
+      hasButton: true
     },
     {
       icon: Phone,
       title: "Call Us",
       details: ["720-281-8937"],
-      action: "Call Now"
+      hasButton: false
     },
     {
       icon: Mail,
       title: "Email Us",
       details: ["orders@leosbakery.com", "info@leosbakery.com"],
-      action: "Send Email"
+      action: "Send Email",
+      hasButton: true
     },
     {
       icon: Clock,
       title: "Hours",
       details: ["Mon-Sat: 6:00 AM - 7:00 PM", "Sunday: 7:00 AM - 5:00 PM"],
-      action: "View Calendar"
+      action: "View Calendar",
+      hasButton: false
     }
   ];
 
@@ -37,6 +40,10 @@ const Contact = () => {
 
   const handleGetDirections = () => {
     window.open("https://www.google.com/maps/dir/?api=1&destination=11251+Reed+Way,+Broomfield,+CO+80020", "_blank");
+  };
+
+  const handleSendEmail = () => {
+    window.location.href = "mailto:orders@leosbakery.com";
   };
 
   return (
@@ -75,14 +82,16 @@ const Contact = () => {
                       </p>
                     ))}
                   </div>
-                  <Button 
-                    variant="outline" 
-                    size="sm"
-                    className="border-bakery-gold text-bakery-gold hover:bg-bakery-gold hover:text-bakery-brown"
-                    onClick={info.title === "Visit Us" ? handleGetDirections : undefined}
-                  >
-                    {info.action}
-                  </Button>
+                  {info.hasButton && (
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      className="border-bakery-gold text-bakery-gold hover:bg-bakery-gold hover:text-bakery-brown"
+                      onClick={info.title === "Visit Us" ? handleGetDirections : info.title === "Email Us" ? handleSendEmail : undefined}
+                    >
+                      {info.action}
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             );
