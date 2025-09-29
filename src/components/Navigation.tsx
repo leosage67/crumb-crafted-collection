@@ -46,7 +46,8 @@ const Navigation = () => {
             { name: 'Home', id: 'home' },
             { name: 'Menu', id: 'menu' },
             { name: 'About', id: 'about' },
-            { name: 'Contact', id: 'contact' }
+            { name: 'Contact', id: 'contact' },
+            { name: 'Order Now', id: 'contact' }
           ].map((item) => (
             <button
               key={item.id}
@@ -56,13 +57,6 @@ const Navigation = () => {
               {item.name}
             </button>
           ))}
-          <Button 
-            size="lg"
-            className="bg-bakery-gold hover:bg-bakery-warm text-bakery-brown font-semibold animate-bounce-soft"
-            onClick={() => scrollToSection('contact')}
-          >
-            Order Now
-          </Button>
         </div>
       </div>
     </nav>
