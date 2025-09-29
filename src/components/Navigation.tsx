@@ -28,7 +28,7 @@ const Navigation = () => {
       isScrolled ? 'bg-background/95 backdrop-blur-md shadow-soft' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <h1 className="text-2xl font-serif font-bold text-bakery-brown">
